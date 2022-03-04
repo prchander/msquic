@@ -2,8 +2,11 @@
 // Licensed under the MIT License.
 
 use libc::c_void;
+#[allow(unused_imports)]
 use c_types::AF_UNSPEC;
+#[allow(unused_imports)]
 use c_types::AF_INET;
+#[allow(unused_imports)]
 use c_types::AF_INET6;
 use serde::{Deserialize, Serialize};
 use std::convert::TryInto;
@@ -582,7 +585,7 @@ pub const PARAM_CONN_PEER_CERTIFICATE_VALID: u32 = 0x05000011;
 pub const PARAM_CONN_LOCAL_INTERFACE: u32 = 0x05000012;
 pub const PARAM_CONN_TLS_SECRETS: u32 = 0x05000013;
 pub const PARAM_CONN_VERSION_SETTINGS: u32 = 0x05000014;
-pub const PARAM_CONN_INITIAL_DCID_PREFIX: u32 = 0x05000015;
+pub const PARAM_CONN_CIBIR_ID: u32 = 0x05000015;
 pub const PARAM_CONN_STATISTICS_V2: u32 = 0x05000016;
 pub const PARAM_CONN_STATISTICS_V2_PLAT: u32 = 0x05000017;
 
